@@ -14,7 +14,7 @@ describe('List tests', () => {
 
   beforeEach(() => {
     wrapper = shallow(<List {...props} />);
-  })
+  });
 
   it('Dodano poprawnie komponent listy ul', () => {
     expect(wrapper.find('ul').exists()).toBe(true);
@@ -22,5 +22,13 @@ describe('List tests', () => {
 
   it('Dodano poprawną ilość li wewnątrz ul', () => {
     expect(wrapper.find('li').length).toBe(props.listItems.length);
+  });
+
+  it('Do kazdego li został dodany key', () => {
+    const listItems = wrapper.find('li');
+
+    listItems.forEach((listItem, index) => {
+      expect(listItem.key()).toBe(String(index));
+    });
   });
 });
