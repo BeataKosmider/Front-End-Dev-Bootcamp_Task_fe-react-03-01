@@ -24,7 +24,7 @@ describe('List tests', () => {
     expect(wrapper.find('li').length).toBe(props.listItems.length);
   });
 
-  it('Do kazdego li został dodany key', () => {
+  it('Dodano key do kazdego li', () => {
     const listItems = wrapper.find('li');
 
     listItems.forEach((listItem, index) => {
