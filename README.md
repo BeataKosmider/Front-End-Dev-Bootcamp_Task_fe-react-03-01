@@ -1,3 +1,9 @@
+Utwórz komponent List, który będzie przyjmował:
+
+prop “listItems” (array stringów).
+
+Twoim zadaniem jest wyświetlić wszystkie elementy listItems jeden pod drugim jako treść <li> wewnątrz <ul> i zwrócić <ul> z komponentu.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
