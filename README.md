@@ -1,3 +1,5 @@
+Task performed during Front-End Developer Bootcamp
+
 Utwórz komponent List, który będzie przyjmował:
 
 prop “listItems” (array stringów).
